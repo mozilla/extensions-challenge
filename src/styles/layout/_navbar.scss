@@ -1,0 +1,89 @@
+// ----------------------------------------------------------------------------
+// Navbar
+// ----------------------------------------------------------------------------
+
+.navbar {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  @include z-index(header);
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: space(3);
+  }
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin-left: 20px;
+  line-height: space(3);
+  display: none;
+  padding: 1.5rem 0;
+
+  @include bp(medium) {
+    display: block;
+  }
+}
+
+.navbar__link {
+  display: block;
+  color: $black;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0px 0px 0px transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0px 3px 0px $black;
+    color: $black;
+  }
+}
+
+.navbar__cta {
+  padding: 1rem 0;
+  margin-left: 20px;
+}
+
+.navbar__cta a {
+  color: $black;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 30px;
+  line-height: inherit;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.3rem spacing(4) !important;
+  border: 2px solid $black;
+  background: transparent;
+  transition: all $base-time $base-ease;
+  text-decoration: none;
+  &:active,
+  &:hover,
+  &:focus {
+    background: darken($white, 5%);
+    color: $black;
+    text-decoration: none;
+    outline: 0;
+    background-image: none;
+  }
+}

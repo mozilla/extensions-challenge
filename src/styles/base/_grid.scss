@@ -1,0 +1,21 @@
+// ----------------------------------------------------------------------------
+// Configuration
+// ----------------------------------------------------------------------------
+
+.container {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include bp(small) {
+    width: (map-get($breakpoints, small));
+  }
+  @include bp(medium) {
+    width: (map-get($breakpoints, medium));
+  }
+  @include bp(large) {
+    width: (map-get($breakpoints, large));
+  }
+}

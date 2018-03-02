@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------------
+// Prizes
+// ----------------------------------------------------------------------------
+
+.prizes {
+  background-color: $gray;
+  padding: space(12) 0;
+  text-align: center;
+}
+
+.prizes__list {
+  margin-top: space(6);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  @include bp(small) {
+    flex-direction: row;
+  }
+}
+
+.prizes__item {
+  margin-left: space(6);
+  margin-right: space(6);
+  margin-bottom: space(4);
+
+  img {
+    max-width: 309px;
+  }
+
+  @include bp(medium) {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: space(4);
+  }
+}

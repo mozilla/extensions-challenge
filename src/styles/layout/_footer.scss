@@ -1,0 +1,82 @@
+// ----------------------------------------------------------------------------
+// Footer
+// ----------------------------------------------------------------------------
+
+.footer {
+  padding: space(8) 0;
+  background-color: $blue-dark;
+  color: $white;
+}
+
+.footer__grid {
+  @include bp(small) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+.footer__logo {
+  @include bp(small) {
+    grid-column: 1 / 4;
+  }
+}
+
+.footer__list {
+  margin: space(2) 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include bp(small) {
+    margin: 0;
+    grid-column: span 3;
+  }
+}
+
+.footer__title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: space(0);
+}
+
+.footer__item {
+  margin-bottom: space(0);
+  display: block;
+  a {
+    color: $white;
+    transition: all 0.5s ease;
+  }
+
+  a:hover {
+    color: darken($white, 5%);
+    text-decoration: underline;
+  }
+}
+
+// LEGAL
+
+.legal {
+  font-size: 12px;
+  margin-top: space(6);
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.legal__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

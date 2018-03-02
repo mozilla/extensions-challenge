@@ -1,0 +1,35 @@
+// ----------------------------------------------------------------------------
+// FAQ Page
+// ----------------------------------------------------------------------------
+
+.faq {
+  padding: space(6) 0;
+
+  h3 {
+    letter-spacing: 0.5px;
+    font-size: 22px;
+  }
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+.faq__list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-weight: bold;
+    color: $black;
+  }
+}
+
+.faq__anchor {
+  position: relative;
+  top: -70px;
+}

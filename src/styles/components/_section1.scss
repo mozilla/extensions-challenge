@@ -1,0 +1,106 @@
+// ----------------------------------------------------------------------------
+// Section 1
+// ----------------------------------------------------------------------------
+
+// Wrapper
+.section-1 {
+  background-color: $yellow;
+  overflow: hidden;
+}
+
+// Hero Section
+.hero {
+  padding: space(16) 0;
+  background-color: $yellow;
+}
+
+.hero__grid {
+  text-align: center;
+
+  @include bp(medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    text-align: left;
+  }
+}
+
+.hero__title {
+  font-size: 62px;
+  line-height: 1.1;
+  margin-top: space(3);
+
+  @include bp(medium) {
+    font-size: 80px;
+    grid-column: 2 / 7;
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  @include bp(large) {
+    font-size: 92px;
+  }
+}
+
+.hero__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp(medium) {
+    grid-column: 7 / 12;
+    grid-row: 1;
+  }
+}
+
+.hero__text {
+  @include bp(medium) {
+    margin-top: space(6);
+    grid-column: 2 / 12;
+  }
+}
+
+// Category Section
+.categories {
+  position: relative;
+  @include z-index(content);
+  padding: space(8) 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    @include z-index(zig-content);
+    width: 100%;
+    height: 180%;
+    top: 0;
+    transform: skewY(3deg);
+    background: $yellow-dark;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.categories__three {
+  text-align: center;
+  margin-top: space(6);
+
+  @include bp(small) {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categories__item {
+  margin-top: space(4);
+
+  @include bp(small) {
+    margin-top: 0;
+  }
+}
+
+.categories__text {
+  margin-top: space(3);
+}
