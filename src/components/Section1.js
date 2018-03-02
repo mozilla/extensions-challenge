@@ -26,9 +26,9 @@ const Section1 = () => (
         <img className="hero__img" src={heroImage} alt="Quantum Extensions Challenge" />
         <h1 className="hero__title">Quantum Extensions Challenge</h1>
         <p className="hero__text">
-          We are challenging extension and Web developers to use their skill, savvy, and creativity
-          to build the next generation of great extensions for Firefox and beyond. Anyone with
-          knowledge of HTML, CSS and Javascript can build an extension. Interested? Read on!
+          We're looking for the first Firefox extensions aces of the Quantum era. We're asking
+          developers to use their skill and creativity to launch the next generation of Firefox
+          extensions. If you can build a website, you can build an extension. Interested? Read on!
         </p>
       </div>
     </div>
@@ -36,6 +36,10 @@ const Section1 = () => (
     <div className="categories">
       <div className="container">
         <h2>We'll be crowning winners in the following categories:</h2>
+        <p className="categories__text">
+          Submit your extension for a chance to become one of the newest champion extension
+          developers for Firefox and get your add-on promoted to all Firefox users.
+        </p>
         <div className="categories__three">
           <Category image={winner1} text="Best in Games & Entertainment" />
           <Category image={winner2} text="Best Dynamic Theme" />

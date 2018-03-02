@@ -80,6 +80,17 @@
   h2 {
     text-align: center;
   }
+
+  .categories__text {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include bp(medium) {
+      padding-left: space(6);
+      padding-right: space(6);
+    }
+  }
 }
 
 .categories__three {
