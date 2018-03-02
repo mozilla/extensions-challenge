@@ -23,6 +23,10 @@
 
   @include bp(small) {
     width: 33%;
+    padding: 10px;
+  }
+
+  @include bp(medium) {
     padding: 0;
   }
 
@@ -32,8 +36,18 @@
 
   img {
     border-radius: 50%;
-    max-width: 200px;
+    max-width: 100%;
     transition: opacity 0.2s ease;
+
+    @include bp(medium) {
+      max-width: 200px;
+    }
+  }
+
+  a:focus {
+    img {
+      box-shadow: 0 0 4px 2px $black;
+    }
   }
 
   &:hover {

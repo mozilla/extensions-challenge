@@ -167,3 +167,11 @@ h5 {
 .wf-active h5 {
   opacity: 1;
 }
+
+.rules,
+.faq {
+  a:focus {
+    color: $primary;
+    text-decoration: underline;
+  }
+}

@@ -49,7 +49,8 @@
   box-shadow: 0px 0px 0px transparent;
   transition: all 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0px 3px 0px $black;
     color: $black;
   }
@@ -85,5 +86,9 @@
     text-decoration: none;
     outline: 0;
     background-image: none;
+  }
+
+  &:focus {
+    box-shadow: 0 0 4px 2px $black;
   }
 }

@@ -23,7 +23,7 @@ const Judge = ({
 const Judges = () => (
   <div className="judges">
     <div className="container">
-      <h2>Judging</h2>
+      <h2>Judges</h2>
       <p className="pt4 px4">
         A panel of judges will select the finalists for each prize category, and then the community
         will vote to decide the winners of each category.

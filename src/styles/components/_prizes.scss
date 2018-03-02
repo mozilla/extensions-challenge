@@ -25,7 +25,11 @@
   margin-bottom: space(4);
 
   img {
-    max-width: 309px;
+    max-width: 100%;
+
+    @include bp(medium) {
+      max-width: 309px;
+    }
   }
 
   @include bp(medium) {

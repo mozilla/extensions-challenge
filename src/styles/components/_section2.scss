@@ -103,6 +103,20 @@
 }
 
 .download__button {
+  .button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include bp(small) {
+    .button {
+      width: auto;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
   @include bp(medium) {
     grid-column: 8 / 13;
   }

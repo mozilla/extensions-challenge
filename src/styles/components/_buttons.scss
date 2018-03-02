@@ -36,6 +36,11 @@ button,
     outline: 0;
     background-image: none;
   }
+
+  &:focus {
+    box-shadow: 0 0 4px 2px $white;
+  }
+
   &:disabled {
     cursor: not-allowed;
     opacity: 0.65;
@@ -95,11 +100,23 @@ Takes a few variables and creates a new button style
 // Button Variations
 // ------------------
 .button--primary {
-  @include button-variant( $_button-primary-color, $_button-primary-color-hover, $_button-primary-bg, $_button-primary-bg-hover, $_button-primary-border, $_button-primary-border-hover);
+  @include button-variant(
+    $_button-primary-color,
+    $_button-primary-color-hover,
+    $_button-primary-bg,
+    $_button-primary-bg-hover,
+    $_button-primary-border,
+    $_button-primary-border-hover
+  );
 }
 
 .button--secondary {
-  @include button-variant( $_button-secondary-color, $_button-secondary-color-hover, $_button-secondary-bg, $_button-secondary-bg-hover);
+  @include button-variant(
+    $_button-secondary-color,
+    $_button-secondary-color-hover,
+    $_button-secondary-bg,
+    $_button-secondary-bg-hover
+  );
 }
 
 /**

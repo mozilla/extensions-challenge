@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 /* eslint jsx-a11y/anchor-has-content: 0 */
 
@@ -125,7 +124,7 @@ const Faq = () => (
       <a className="faq__anchor" name="6" />
       <h3>How do I enter the contest?</h3>
       <p>
-        When you are ready to publish your extension to addons.mozilla.org (AMO), head to the
+        When you are ready to publish your extension to addons.mozilla.org (AMO), head to the{' '}
         <a target="_blank" rel="noreferrer noopener" href="https://addons.mozilla.org/developers/">
           Developer Hub
         </a>. Then, fill out the submission form and include link(s) to the extension(s) you would
@@ -138,7 +137,7 @@ const Faq = () => (
         To qualify for the challenge, your extension must be compatible with Firefox 60, which is
         currently in Beta (Firefox Developer Edition). To fully take advantage of the new and
         improved APIs that will land with Firefox 60, we recommend developing and testing your
-        extension using
+        extension using{' '}
         <a
           href="https://www.mozilla.org/firefox/developer/"
           target="_blank"
@@ -166,7 +165,7 @@ const Faq = () => (
       <h3>I’d like to port my Chrome extension to Firefox. Is it easy?</h3>
       <p>
         You should be able to port your Chrome extension to Firefox with minimal changes. You can
-        find
+        find{' '}
         <a
           href="https://developer.mozilla.orgAdd-ons/WebExtensions/Porting_a_Google_Chrome_extension"
           target="_blank"
@@ -177,7 +176,7 @@ const Faq = () => (
         on MDN web docs.
       </p>
       <p>
-        We recommend checking to see if your extension is compatible with Firefox by using our
+        We recommend checking to see if your extension is compatible with Firefox by using our{' '}
         <a target="_blank" rel="noopener noreferrer" href="https://www.extensiontest.com/">
           extension compatibility test
         </a>.
