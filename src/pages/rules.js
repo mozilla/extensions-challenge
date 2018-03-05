@@ -3,7 +3,7 @@ import React from 'react';
 const Rules = () => (
   <div className="rules">
     <div className="container">
-      <h1 className="h2 mt4">Quantum Extensions Challenge Official Rules</h1>
+      <h1 className="h2 mt4">Firefox Quantum Extensions Challenge Official Rules</h1>
       <p>
         <strong>1. Sponsor.</strong> Sponsor of this promotion is Mozilla Corporation, 331 E. Evelyn
         Avenue, Mountain View, CA, 94041.
@@ -279,9 +279,9 @@ const Rules = () => (
       </p>
       <p>
         <strong>15. Winners List.</strong> Individuals may request the name of winner(s) by
-        submitting a self-addressed stamped envelope prior to June 1, 2018 to Mozilla Quantum
-        Extensions Challenge Winner’s List Request, 331 E. Evelyn Ave., Mountain View, CA 94041.
-        Vermont residents may omit postage.
+        submitting a self-addressed stamped envelope prior to June 1, 2018 to Mozilla Firefox
+        Quantum Extensions Challenge Winner’s List Request, 331 E. Evelyn Ave., Mountain View, CA
+        94041. Vermont residents may omit postage.
       </p>
     </div>
   </div>

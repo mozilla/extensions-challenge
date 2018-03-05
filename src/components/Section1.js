@@ -24,7 +24,7 @@ const Section1 = () => (
     <div className="hero">
       <div className="hero__grid container">
         <img className="hero__img" src={heroImage} alt="Quantum Extensions Challenge" />
-        <h1 className="hero__title">Quantum Extensions Challenge</h1>
+        <h1 className="hero__title">Firefox Quantum Extensions Challenge</h1>
         <p className="hero__text">
           We're looking for the first Firefox extensions aces of the Quantum era. We're asking
           developers to use their skill and creativity to launch the next generation of Firefox

@@ -22,12 +22,12 @@
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1rem;
     text-align: left;
+    align-items: center;
   }
 }
 
 .hero__title {
   font-size: 62px;
-  line-height: 1.1;
   margin-top: space(3);
 
   @include bp(medium) {
@@ -48,7 +48,7 @@
   margin-right: auto;
 
   @include bp(medium) {
-    grid-column: 7 / 12;
+    grid-column: 6 / 13;
     grid-row: 1;
   }
 }
