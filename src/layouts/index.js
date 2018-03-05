@@ -36,7 +36,7 @@ const TemplateWrapper = ({ children }) => (
         property="og:description"
         content="Use your skill, savvy, and creativity to build the next generation of great extensions for Firefox. Winners will receive prizes such as gift cards, or iPads."
       />
-      <meta property="og:image" content="https://i.imgur.com/AtLdM7O.png" />
+      <meta property="og:image" content="https://i.imgur.com/XBf3fVA.png" />
 
       {/* Social Sharing - Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@ const TemplateWrapper = ({ children }) => (
         name="twitter:description"
         content="Join the Quantum Extensions Challenge. Use your skill, savvy, and creativity to build the next generation of great extensions for Firefox. Winners will receive prizes such as gift cards, or iPads."
       />
-      <meta name="twitter:image" content="https://i.imgur.com/AtLdM7O.png" />
+      <meta name="twitter:image" content="https://i.imgur.com/XBf3fVA.png" />
     </Helmet>
     <Navbar />
     <div>{children()}</div>
