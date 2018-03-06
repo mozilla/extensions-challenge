@@ -1,0 +1,51 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.9.4
+    working_directory: ~/extensions-challenge
+    steps:
+      - checkout
+      - restore_cache:
+         keys:
+           - node-modules-
+      - run:
+          name: Setup env and dependencies
+          command: |
+            # curl -L -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && chmod +x ~/bin/jq
+            yarn
+      - run:
+          name: Build static site
+          command: |
+            yarn run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - ./*
+      - save_cache:
+         key: node-modules-
+  deploy:
+    docker:
+      - image: circleci/node:8.9.4
+    requires:
+      - build
+    filters:
+      branches:
+        ignore: /.*/
+      tags:
+        only: /^v[0-9]+(\.[0-9]+)*$/
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Install AWSCLI
+          command: |
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install --upgrade pip
+            sudo pip install awscli --upgrade
+      - run:
+          name: extensions challenge deployment
+          command: |
+            # TODO Set EXTCHALLENGE_BUCKET env var.
+            ./bin/deploy.sh
+            # ./bin/circleci/invalidate-cloudfront-cache.sh [INSERT_SOMETHING_HERE]
