@@ -22,13 +22,6 @@ jobs:
   deploy:
     docker:
       - image: circleci/node:8.9.4
-    requires:
-      - build
-    filters:
-      branches:
-        ignore: /.*/
-      tags:
-        only: /^v[0-9]+(\.[0-9]+)*$/
     steps:
       - attach_workspace:
           at: .
@@ -44,3 +37,16 @@ jobs:
             # TODO Set EXTCHALLENGE_BUCKET env var.
             ./bin/deploy.sh
             # ./bin/circleci/invalidate-cloudfront-cache.sh [INSERT_SOMETHING_HERE]
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v[0-9]+(\.[0-9]+)*$/
