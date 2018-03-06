@@ -6,9 +6,6 @@ jobs:
     working_directory: ~/extensions-challenge
     steps:
       - checkout
-      - restore_cache:
-         keys:
-           - node-modules-
       - run:
           name: Setup env and dependencies
           command: |
@@ -22,8 +19,6 @@ jobs:
           root: .
           paths:
             - ./*
-      - save_cache:
-         key: node-modules-
   deploy:
     docker:
       - image: circleci/node:8.9.4
