@@ -53,7 +53,7 @@ aws s3 sync \
   --content-type "text/html" \
   --exclude "*" \
   --include "*.html" \
-  --metadata "${CSP}, ${HSTS}, ${TYPE}, ${XSS}}" \
+  --metadata "{${CSP}, ${HSTS}, ${TYPE}, ${XSS}}" \
   --metadata-directive "REPLACE" \
   --acl "public-read" \
   public/ s3://${EXTCHALLENGE_BUCKET}/
@@ -75,7 +75,7 @@ aws s3 sync \
   --content-type "image/svg+xml" \
   --exclude "*" \
   --include "*.svg" \
-  --metadata "${HSTS}, ${TYPE}}" \
+  --metadata "{${HSTS}, ${TYPE}}" \
   --metadata-directive "REPLACE" \
   --acl "public-read" \
   public/ s3://${EXTCHALLENGE_BUCKET}/
@@ -84,7 +84,7 @@ aws s3 sync \
 aws s3 sync \
   --delete \
   --cache-control "max-age=${ONE_YEAR}, immutable" \
-  --metadata "${HSTS}, ${TYPE}}" \
+  --metadata "{${HSTS}, ${TYPE}}" \
   --metadata-directive "REPLACE" \
   --acl "public-read" \
   public/ s3://${EXTCHALLENGE_BUCKET}/
@@ -98,7 +98,7 @@ for fn in $(find public -name 'index.html' -not -path 'public/index.html'); do
     --content-type "text/html" \
     --exclude "*" \
     --include "*.html" \
-    --metadata "${CSP}, ${HSTS}, ${TYPE}, ${XSS}}" \
+    --metadata "{${CSP}, ${HSTS}, ${TYPE}, ${XSS}}" \
     --metadata-directive "REPLACE" \
     --acl "public-read" \
     $fn s3://${EXTCHALLENGE_BUCKET}/${s3path}
