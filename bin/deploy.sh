@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 # This file is used to deploy Extensions Challenge to an S3 bucket. It
 # expects to be run from the root of the extensions-challenge directory and
