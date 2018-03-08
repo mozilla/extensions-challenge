@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Setup env and dependencies
           command: |
-            # curl -L -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && chmod +x ~/bin/jq
+            curl -L -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && chmod +x ~/bin/jq
             yarn
       - run:
           name: Build static site
@@ -35,7 +35,7 @@ jobs:
           name: extensions challenge deployment
           command: |
             ./bin/deploy.sh
-            # ./bin/circleci/invalidate-cloudfront-cache.sh
+            ./bin/circleci/invalidate-cloudfront-cache.sh
 workflows:
   version: 2
   build-and-deploy:
