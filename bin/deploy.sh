@@ -25,7 +25,7 @@ TEN_MINUTES="600"
 # For long-lived assets; in seconds
 ONE_YEAR="31536000"
 
-CSP="\"content-security-policy\": \"default-src 'self'; font-src 'self' fonts.gstatic.com use.typekit.net; form-action 'none'; frame-ancestors 'self'; img-src 'self' data: https://ssl.google-analytics.com https://www.google-analytics.com; object-src 'none'; script-src 'self' 'unsafe-inline' use.typekit.net https://ssl.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; report-uri /__cspreport__; frame-src 'none';\""
+CSP="\"content-security-policy\": \"default-src 'self'; font-src 'self' fonts.gstatic.com use.typekit.net; form-action 'none'; frame-ancestors 'self'; img-src 'self' data: https://ssl.google-analytics.com https://www.google-analytics.com https://p.typekit.net/p.gif; object-src 'none'; script-src 'self' 'unsafe-inline' use.typekit.net https://ssl.google-analytics.com https://www.google-analytics.com/analytics.js; style-src 'self' 'unsafe-inline' fonts.googleapis.com; report-uri /__cspreport__; frame-src 'none';\""
 HSTS="\"strict-transport-security\": \"max-age=${ONE_YEAR}; includeSubDomains; preload\""
 TYPE="\"x-content-type-options\": \"nosniff\""
 XSS="\"x-xss-protection\": \"1; mode=block\""
