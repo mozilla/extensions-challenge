@@ -64,7 +64,7 @@ aws s3 sync \
   --content-type "application/json" \
   --exclude "*" \
   --include "*.json" \
-  --metadata "{${ACAO}, ${HPKP}, ${HSTS}, ${TYPE}}" \
+  --metadata "{${ACAO}, ${HSTS}, ${TYPE}}" \
   --metadata-directive "REPLACE" \
   --acl "public-read" \
   public/ s3://${EXTCHALLENGE_BUCKET}/
