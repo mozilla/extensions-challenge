@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
     <Typekit kitId="zzf2slz" />
     <Helmet>
       {/* Meta */}
-      <title>Quantum Extensions Challenge</title>
+      <title>Firefox Quantum Extensions Challenge</title>
       <meta
         name="description"
         content="Use your skill, savvy, and creativity to build the next generation of great extensions for Firefox."
