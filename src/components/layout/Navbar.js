@@ -26,7 +26,16 @@ const Navbar = () => (
         </Link>
       </li>
       <li className="navbar__cta">
-        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/U4ReAbu8qPsFtMPF3">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://goo.gl/forms/U4ReAbu8qPsFtMPF3"
+          onClick={() => {
+            if (window.ga) {
+              ga('send', 'event', 'extensions challenge interactions', 'submit', 'sticky nav');
+            }
+          }}
+        >
           Submit
         </a>
       </li>

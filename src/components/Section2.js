@@ -46,6 +46,11 @@ const Section2 = () => (
           <Button
             text="Submit Now"
             link="https://goo.gl/forms/U4ReAbu8qPsFtMPF3"
+            onClick={() => {
+              if (window.ga) {
+                ga('send', 'event', 'extensions challenge interactions', 'submit', 'how to enter');
+              }
+            }}
             dark={false}
             outline={false}
             external
@@ -68,6 +73,11 @@ const Section2 = () => (
         <Button
           text="Get Firefox Developer Edition"
           link="https://www.mozilla.org/en-US/firefox/developer/?utm_content=firefox-developer&utm_medium=referral&utm_source=quantum-extensions"
+          onClick={() => {
+            if (window.ga) {
+              ga('send', 'event', 'extensions challenge interactions', 'Firefox Download', 'Firefox Developer Edition');
+            }
+          }}
           dark={false}
           outline={false}
           external

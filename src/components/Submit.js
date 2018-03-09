@@ -17,6 +17,11 @@ const Submit = () => (
           className="mt4"
           text="Submit Now"
           link="https://goo.gl/forms/U4ReAbu8qPsFtMPF3"
+          onClick={() => {
+            if (window.ga) {
+              ga('send', 'event', 'extensions challenge interactions', 'submit', 'footer');
+            }
+          }}
           dark={false}
           outline
           external
