@@ -5,6 +5,8 @@
 # you'll need your S3 bucket name in an environment variable
 # $EXTCHALLENGE_BUCKET
 
+set -x
+
 if [ ! -d "public" ]; then
     echo "Can't find /public/ directory.  Are you running from the extensions-challenge?"
     exit 1
