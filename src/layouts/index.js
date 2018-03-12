@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@firefox" />
       <meta name="twitter:creator" content="@firefox" />
-      <meta name="twitter:title" content="Win prizes for building great extensions for FireFox" />
+      <meta name="twitter:title" content="Win prizes for building great extensions for Firefox" />
       <meta
         name="twitter:description"
         content="Join the Quantum Extensions Challenge. Use your skill, savvy, and creativity to build the next generation of great extensions for Firefox. Winners will receive prizes such as gift cards, or iPads."
