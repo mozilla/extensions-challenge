@@ -44,7 +44,7 @@ const Judges = () => (
             image={bianca}
             name="Bianca Danforth"
             desc="Firefox Front End Experiments Engineer"
-            link="https://mozillians.org/u/biancadanforth/"
+            link="https://mozillians.org/u/bdanforth/"
           />
           <Judge
             image={jyotsna}
