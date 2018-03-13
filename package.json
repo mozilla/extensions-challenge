@@ -1,7 +1,7 @@
 {
   "name": "quantum-extensions-challenge",
   "description": "Firefox Quantum Extensions Challenge",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Dan Brown <dbrown@mozilla.com>",
   "dependencies": {
     "autoprefixer": "^8.0.0",
