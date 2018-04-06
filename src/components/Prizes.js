@@ -5,6 +5,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 // images
 import prize1 from './img/prize1.png';
 import prize2 from './img/prize2.png';
+import prize3 from './img/prize3.png';
 
 configureAnchors({ offset: -90 });
 
@@ -24,6 +25,10 @@ const Prizes = () => (
           <div className="prizes__item">
             <img src={prize2} alt="Amazon Gift Card" />
             <p>Runners up in each category will receive a $250 USD Amazon gift card.</p>
+          </div>
+          <div className="prizes__item">
+            <img src={prize3} alt="WeTransfer Plus" />
+            <p>All entrants with valid submissions will receive one free year of <a href="https://wetransfer.com/about">WeTransfer Plus</a>.</p>
           </div>
         </div>
       </div>

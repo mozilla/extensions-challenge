@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  width: 100%;
 
   @include bp(small) {
     flex-direction: row;
@@ -24,12 +25,12 @@
   margin-right: space(6);
   margin-bottom: space(4);
 
+  @include bp(small) {
+    width: calc(33% - #{space(6) + space(6)});
+  }
+
   img {
     max-width: 100%;
-
-    @include bp(medium) {
-      max-width: 309px;
-    }
   }
 
   @include bp(medium) {
