@@ -6,6 +6,7 @@ import heroImage from './img/hero.svg';
 import winner1 from './img/winner1.svg';
 import winner2 from './img/winner2.svg';
 import winner3 from './img/winner3.svg';
+import wetransfer from './img/wetransfer.svg';
 
 // For repeating category section
 const Category = ({ image, text }) => (
@@ -29,6 +30,18 @@ const Section1 = () => (
           We're looking for the first Firefox extensions aces of the Quantum era. We're asking
           developers to use their skill and creativity to launch the next generation of Firefox
           extensions. If you can build a website, you can build an extension. Interested? Read on!
+        </p>
+
+        <img className="hero__we-logo" src={wetransfer} alt="WeTransfer" />
+
+        <p className="hero__we-text">
+          The Firefox Quantum Extensions Challenge is supported by WeTransfer, who is donating a
+          1-year WeTransfer Plus account for its file transfer and storage service to eligible
+          developers.{' '}
+          <a href="https://wetransfer.com/about" target="_blank" rel="noreferrer">
+            Learn more
+          </a>{' '}
+          about WeTransfer.
         </p>
       </div>
     </div>
