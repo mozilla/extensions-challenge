@@ -167,7 +167,7 @@ const Faq = () => (
         You should be able to port your Chrome extension to Firefox with minimal changes. You can
         find{' '}
         <a
-          href="https://developer.mozilla.orgAdd-ons/WebExtensions/Porting_a_Google_Chrome_extension"
+          href="https://developer.mozilla.org/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension"
           target="_blank"
           rel="noopener noreferrer"
         >
