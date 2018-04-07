@@ -1,7 +1,7 @@
 {
   "name": "quantum-extensions-challenge",
   "description": "Firefox Quantum Extensions Challenge",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Dan Brown <dbrown@mozilla.com>",
   "dependencies": {
     "autoprefixer": "^8.0.0",
@@ -15,9 +15,7 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-typekit": "^1.1.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "alias": "quantum-staging",
   "license": "MIT",
   "main": "n/a",
