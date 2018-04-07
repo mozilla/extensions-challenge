@@ -53,6 +53,27 @@
   }
 }
 
+.hero__we-logo {
+  width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: space(8);
+
+  @include bp(medium) {
+    margin-top: space(6);
+    grid-column: 2 / 4;
+  }
+}
+
+.hero__we-text {
+  margin-top: space(2);
+  @include bp(medium) {
+    margin-top: space(6);
+    grid-column: 5 / 13;
+  }
+}
+
 .hero__text {
   @include bp(medium) {
     margin-top: space(6);
