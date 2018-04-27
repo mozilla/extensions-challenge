@@ -27,9 +27,33 @@ const Section1 = () => (
         <img className="hero__img" src={heroImage} alt="Quantum Extensions Challenge" />
         <h1 className="hero__title">Firefox Quantum Extensions Challenge</h1>
         <p className="hero__text">
-          We're looking for the first Firefox extensions aces of the Quantum era. We're asking
-          developers to use their skill and creativity to launch the next generation of Firefox
-          extensions. If you can build a website, you can build an extension. Interested? Read on!
+          We're looking for the first Firefox extension all-stars of the Quantum era. Our judges
+          reviewed more than 100 submissions and have selected the finalists for each prize
+          category. Now, it’s time for the add-on community to vote for the winners. Use{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.mozilla.org/firefox/channel/desktop/"
+          >
+            Firefox Beta
+          </a>{' '}
+          or{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.mozilla.org/firefox/developer/"
+          >
+            Firefox Developer Edition
+          </a>{' '}
+          and take these extensions for a test drive (many of the APIs used are not yet available on
+          Firefox 59, the current release), then vote for your favorites{' '}
+          <a
+            href="https://goo.gl/forms/QWSCjiCgMisXT6aa2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>.
         </p>
 
         <img className="hero__we-logo" src={wetransfer} alt="WeTransfer" />
@@ -38,7 +62,7 @@ const Section1 = () => (
           The Firefox Quantum Extensions Challenge is supported by WeTransfer, who is donating a
           1-year WeTransfer Plus account for its file transfer and storage service to eligible
           developers.{' '}
-          <a href="https://wetransfer.com/about" target="_blank" rel="noreferrer">
+          <a href="https://wetransfer.com/about" target="_blank" rel="noopener noreferrer">
             Learn more
           </a>{' '}
           about WeTransfer.

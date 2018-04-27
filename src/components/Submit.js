@@ -11,15 +11,15 @@ const Submit = () => (
     <div className="submit__grid container">
       <img className="submit__image" src={submitImg} alt="submissions" />
       <div className="submit__main">
-        <h2>Submissions will be accepted from March 15 - April 15, 2018.</h2>
+        <h2>Voting is open until April 29 at 11:59pm. PDT</h2>
         <p>Winners will be announced with the release of Firefox 60 on May 8, 2018.</p>
         <Button
           className="mt4"
-          text="Submit Now"
-          link="https://goo.gl/forms/U4ReAbu8qPsFtMPF3"
+          text="Vote"
+          link="https://goo.gl/forms/QWSCjiCgMisXT6aa2"
           onClick={() => {
             if (window.ga) {
-              ga('send', 'event', 'extensions challenge interactions', 'submit', 'footer');
+              ga('send', 'event', 'extensions challenge interactions', 'vote', 'footer');
             }
           }}
           dark={false}

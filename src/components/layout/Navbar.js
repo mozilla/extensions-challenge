@@ -11,16 +11,6 @@ const Navbar = () => (
     </Link>
     <ul className="navbar__list">
       <li className="navbar__item">
-        <a className="navbar__link" href="/#how">
-          How to Enter
-        </a>
-      </li>
-      <li className="navbar__item">
-        <a className="navbar__link" href="/#resources">
-          Resources
-        </a>
-      </li>
-      <li className="navbar__item">
         <Link to="/faq" className="navbar__link">
           FAQ
         </Link>
@@ -29,14 +19,14 @@ const Navbar = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://goo.gl/forms/U4ReAbu8qPsFtMPF3"
+          href="https://goo.gl/forms/QWSCjiCgMisXT6aa2"
           onClick={() => {
             if (window.ga) {
-              ga('send', 'event', 'extensions challenge interactions', 'submit', 'sticky nav');
+              ga('send', 'event', 'extensions challenge interactions', 'vote', 'sticky nav');
             }
           }}
         >
-          Submit
+          Vote
         </a>
       </li>
     </ul>
