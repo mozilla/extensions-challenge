@@ -10,7 +10,7 @@
 
 // Hero Section
 .hero {
-  padding: space(16) 0;
+  padding: space(8) 0;
   background-color: $yellow;
 }
 
@@ -78,6 +78,14 @@
   @include bp(medium) {
     margin-top: space(6);
     grid-column: 2 / 12;
+  }
+}
+
+.hero__p-head {
+  font-size: 24px;
+  margin-top: space(6);
+  @include bp(medium) {
+    margin-top: 0;
   }
 }
 

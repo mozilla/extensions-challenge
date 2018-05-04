@@ -1,15 +1,10 @@
 import React from 'react';
 
 // components
-import Link from 'gatsby-link';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import Button from '../components/Button';
 
 // images
 import ffdev from './img/ffde.png';
-import helpImg from './img/help.svg';
-
-configureAnchors({ offset: -90 });
 
 const Section2 = () => (
   <div className="section2">
