@@ -62,7 +62,7 @@
 
   @include bp(medium) {
     margin-top: space(6);
-    grid-column: 2 / 4;
+    grid-column: 11 / 13;
   }
 }
 
@@ -70,7 +70,8 @@
   margin-top: space(2);
   @include bp(medium) {
     margin-top: space(6);
-    grid-column: 5 / 13;
+    grid-column: 1 / 10;
+    grid-row: 1;
   }
 }
 
