@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+// Winner component
+// ----------------------------------------------------------------------------
+
+.winner {
+  color: $black;
+  margin-bottom: space(6);
+  display: block;
+
+  &:hover {
+    color: lighten($black, 40%);
+  }
+  @include bp(medium) {
+    width: 33%;
+    margin-bottom: 0;
+  }
+}
+
+.winner__ext {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.winner__name {
+  margin-bottom: space(1);
+}
+
+.winner__cat {
+  font-size: 12px;
+}
+
+.winner__icon {
+  height: 48px;
+  width: 48px;
+  margin-bottom: space(2);
+}

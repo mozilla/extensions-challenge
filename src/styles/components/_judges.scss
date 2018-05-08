@@ -14,6 +14,11 @@
   // grid-gap: space(4);
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
+
+  @include bp(medium) {
+    flex-direction: row;
+  }
 }
 
 .judges__single {
