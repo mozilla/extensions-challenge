@@ -1,5 +1,5 @@
 
-[![CircleCI](https://circleci.com/gh/mozilla/extensions-challenge/tree/master.svg?style=svg)](https://circleci.com/gh/mozilla/extensions-challenge/tree/master)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) [![CircleCI](https://circleci.com/gh/mozilla/extensions-challenge/tree/master.svg?style=svg)](https://circleci.com/gh/mozilla/extensions-challenge/tree/master)
 
 # Extensions Challenge (Website)
 
